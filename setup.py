@@ -9,7 +9,8 @@ with open('LICENSE') as f:
 
 requirements = [
     'docker',
-    'zmq'
+    'zmq',
+    'zerorpc'
 ]
 
 setup(
