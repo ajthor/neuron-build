@@ -1,27 +1,17 @@
+#!/usr/bin/env python
 
-from setuptools import setup, find_packages
+from distutils.core import setup
 
-with open('README.rst') as f:
-    readme = f.read()
 
-with open('LICENSE') as f:
-    license = f.read()
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
 
-requirements = [
-    'docker',
-    'zmq',
-    'zerorpc'
-]
-
-setup(
-    name='neuron-build',
-    version='0.0.1',
+setup(name='neuron-build',
+    version='0.0.1'
     description='Neuron application for building worker environments.',
-    long_description=readme,
     author='Adam Thorpe',
     author_email='adam.thorpe.g@gmail.com',
     url='https://github.com/ajthor/neuron-build',
-    license=license,
-    packages=find_packages(exclude=('tests', 'docs')),
+    package_dir={'': 'neuron_build'},
     install_requires=requirements
 )

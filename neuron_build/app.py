@@ -21,6 +21,8 @@ srvr = zerorpc.Server(Builder())
 srvr.bind("tcp://0.0.0.0:4197")
 srvr.run()
 
+srvr.close()
+
 # while True:
 #     #  Wait for next build command.
 #     message = socket.recv()
