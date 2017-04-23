@@ -1,0 +1,27 @@
+{
+  "name": "neuron-builder",
+  "version": "0.0.0",
+  "description": ".neuron.yml -> Dockerfile + build.sh",
+  "main": "./bin/builder.js",
+  "scripts": {
+    "test": "node test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajthor/neuron-builder.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajthor/neuron-builder/issues"
+  },
+  "homepage": "https://github.com/ajthor/neuron-builder#readme",
+  "devDependencies": {
+    "tape": "^4.6.3",
+    "yaml": "^0.3.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.8.3",
+    "lodash": "^4.17.4"
+  }
+}

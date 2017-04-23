@@ -1,0 +1,13 @@
+image:
+  - nodejs
+  
+install:
+  - apt-get update -q
+  - apt-get install curl cmake
+
+before_script: false
+
+script:
+  - sh build.sh
+
+after_script: ./clean.sh
